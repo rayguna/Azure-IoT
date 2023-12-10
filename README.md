@@ -2,13 +2,9 @@
 
 Overview:
     A. [Create an app. on Iot Central](#a-create-an-app-on-iot-central)
-
     B. [Create Device](#b-create-device)
-    
     C. [Prepare the Actual Device](#c-prepare-the-actual-device)
-    
     D. [Adjust Display](#d-adjust-display)
-    
     E. [Enable Remote control](#e-enable-remote-control)
 
 ***
