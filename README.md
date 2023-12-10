@@ -1,6 +1,6 @@
 ### Connect ESP32-S3 to Azure IoT
 
-Table of Contents
+Table of Contents:<br>
     A. [Create an app on Iot Central](#a-create-an-app-on-iot-central)  
     B. [Create Device](#b-create-device)    
     C. [Prepare the Actual Device](#c-prepare-the-actual-device)    
