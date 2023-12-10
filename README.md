@@ -2,9 +2,13 @@
 
 Overview:
     A. [Create an app. on Iot Central](#a-create-an-app-on-iot-central)
+
     B. [Create Device](#b-create-device)
+    
     C. [Prepare the Actual Device](#c-prepare-the-actual-device)
+    
     D. [Adjust Display](#d-adjust-display)
+    
     E. [Enable Remote control](#e-enable-remote-control)
 
 ***
@@ -76,11 +80,11 @@ Overview:
    
    - Ground (right): GND (Black)
      
-     <img src="FigC1.jpg" size=(3,3)> 
+     <img src="pics/FigC1.jpg" size=(3,3)> 
      
      <b>Figure C1. DHT11 connection to ESP32-S3 (top view)</b>
      
-     <img src="FigC2.jpg" size=(3,3)>
+     <img src="pics/FigC2.jpg" size=(3,3)>
      
      <b>Figure C2. DHT11 connection to ESP32-S3 (side view)</b>
 
@@ -135,7 +139,7 @@ Overview:
    
    - To view the humidity and temperature output from DHT11 sensor, go to Tools > Serial Monitor. The following window will pop out. Make sure to match the baud rate with the number you specify in the code. In this case, the baud rate is 115200.
      
-     <img src="FigC3.png" size=(3,3)>
+     <img src="pics/FigC3.png" size=(3,3)>
      <b> Figure C3. Humidity and temperature. </b>
 
 4. Check wi-fi connection (Optional)
@@ -161,7 +165,7 @@ Overview:
      }
      ```
      
-     <img src="FigC4.png" size=(3,3)>
+     <img src="pics/FigC4.png" size=(3,3)>
      <b>Figure C4. Serial monitor.</b>
 
 5. Connect Device to IoT Central via a Simulation Code
@@ -169,7 +173,7 @@ Overview:
    
    - Enable a mobile hotspot and set the Network band to 2.4 GHz (not 5 GHz). Note the Network name (SSID) and password amd turn the mobile hotspot on. 
      
-     <img src="FigC5.png">
+     <img src="pics/FigC5.png">
      <b>Figure C5. Mobile hotspot configuration.</b>
    
    5.2. Upload script into ESP32-S3 microcontroller
@@ -182,23 +186,23 @@ Overview:
    
    - Below shows the contents of the *iot_configs.h* file that requires modification. See section B to retrieve the relevant parameters.
      
-     <img src="FigC6a.png">
+     <img src="pics/FigC6a.png">
      <b> Figure C6a. The 2.4 GHz wifi that requires modification for SSID (network name) and password. </b>
      
-     <img src="FigC6b.png">
+     <img src="pics/FigC6b.png">
      <b> Figure C6b. The IoT Central parameters that require modifications for ID_SCOPE, DEVICE_ID, and DEVICE_KEY. </b>
    
    - Click on Sketch > Upload to load the script into the ESP32 microcontroller.
    
    - Once the upload is complete, go to Tools >  Serial Monitor.
      
-     <img src="FigC7.png">
+     <img src="pics/FigC7.png">
      
      <b>Figure C7. Serial monitor showing the connection status.</b>
    
    - Below shows the status of the device on IoT Central.
      
-     <img src="FigC8.png">
+     <img src="pics/FigC8.png">
      
      <b> Figure C8. Updated table.</b>
    
@@ -206,7 +210,7 @@ Overview:
    
    - Click on esp32-dht11 to view the sensor parameters.The Overview tab is automatically selected to display the charts. If not, click on it.
      
-     <img src="FigC9.png">
+     <img src="pics/FigC9.png">
      
      <b> Figure C9. esp32-dht11 Overview. </b>
 
@@ -220,7 +224,7 @@ Overview:
    
    - SET the DHT_PIN to 4 within the iot_config.h file (see Figure C10).
      
-     <img src="FigC10.png">
+     <img src="pics/FigC10.png">
      
      <b> Figure C10. Change DHT_PIN to 4 in iot_configs.h. </b>
    
@@ -228,7 +232,7 @@ Overview:
    
    - Once uploaded, it takes about a minute to be connected. You can also watch the status of the communication from the serial monitor window. Once connected, you will see that the temperature and humidity values change to a different value that the default values. You can blow hot air with a hair dryer or a heater fan to alter the temperature and humidity (See Figure C11). 
      
-     <img src="FigC11.png">
+     <img src="pics/FigC11.png">
      
      <b> Figure C11. esp32-dht11 Overview. </b>
 
@@ -250,7 +254,7 @@ Overview:
    
    - Click Save.
      
-     <img src="FigD1.png">
+     <img src="pics/FigD1.png">
      
      <b> Figure D1. The new Device template. </b>
    
@@ -268,7 +272,7 @@ Overview:
    
    - You will be led to the About page. Click on Overview to see the new display which only show the relevant parameters.
      
-     <img src="FigD2.png">
+     <img src="pics/FigD2.png">
      
      <b> Figure D2. esp32-dht11 data displayed on the new Device template. </b>
 
@@ -278,19 +282,19 @@ Overview:
    
    - Within the Azure_IoT_Central_ESP32 tab, add the line: #define LED_BUILTIN 2 (Figure D3).
      
-     <img src="FigD3.png">
+     <img src="pics/FigD3.png">
      
      <b> Figure D3. The Azure_IoT_Central_ESP32 tab first modification. </b>
      
      - Add another line within the void loop() functioon (Figure D4).
      
-     <img src="FigD4.png">
+     <img src="pics/FigD4.png">
      
      <b> Figure D4. The Azure_IoT_Central_ESP32 tab second modification. </b>
      
      - Within the Azure_IoT_PnP_Template.cpp tab, add the line: digitalWrite(LED_BUILTIN, led1_on);. 
      
-     <img src="FigD5.png">
+     <img src="pics/FigD5.png">
      
      <b> Figure D5. The Azure_IoT_PnP_Template.cpp tab third modification. </b>
      
@@ -302,13 +306,13 @@ Overview:
    
    - Toggle the "Run" button to turn the builtin LED light on and off (Figure D6). 
      
-     <img src="FigD6.png">
+     <img src="pics/FigD6.png">
      
      <b> Figure D6. The Azure_IoT_PnP_Template.cpp tab third modification. </b> 
    
    - Figure D7a and D7b show the builtin LED button in the on and off states, respectively.
      
-     <img src="FigD7.png">
+     <img src="pics/FigD7.png">
      
      <b> Figure D7. The builtin LED light in the (Left) "ON" and (Right) "OFF" states. </b> 
 
