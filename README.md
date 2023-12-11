@@ -325,7 +325,7 @@ Table of Contents:<br>
 
   - Figure F1 below shows how the turbidity meter is attached to the ESP32-S3 microcontroller, which are as follows.
     - G (Ground): GND (Black)
-    - V (Voltge): 5 V (Red)
+    - V (Voltage): 5 V (Red)
     - S (Signal): Pin No. 1 (Yellow)
 
    <img src="pics/FigF1.jpg">
