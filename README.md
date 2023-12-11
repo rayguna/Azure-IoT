@@ -35,7 +35,7 @@ Table of Contents:<br>
    - Click on: "Go to resource" to enter into the newly created app page called uniqueiot123.
 4. On uniqueiot123 page, click on the IoT Central Application URL: https://esp32-dht11.azureiotcentral.com. 
 
-**Note:** If you change your mind and need to delete your application, from apps.azureiotcentral.com/myapps, click on the specific application and scroll to the bottom of the side-bar > Within Settings click on Application to get into the Management page > Scroll down and click on Delete.
+**Note:** If you change your mind and need to delete your application, from <a href="apps.azureiotcentral.com/myapps"> apps.azureiotcentral.com/myapps </a>, click on the specific application and scroll to the bottom of the side-bar > Within Settings click on Application to get into the Management page > Scroll down and click on Delete.
 
 #### <a name="b-create-device">B. Create Device</a>
 
