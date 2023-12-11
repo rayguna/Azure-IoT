@@ -73,7 +73,7 @@ Table of Contents:<br>
      
      <b>Figure B3. Unpopulated esp32-dht11 table.</b>
 
-#### <a name="c-prepare-the-actual-device>C. Prepare the Actual Device</a>
+#### <a name="c-prepare-the-actual-device">C. Prepare the Actual Device</a>
 
 1. Connect DHT11to ESP32-S3 as shown in the picture below. The connections are as follows:
    
