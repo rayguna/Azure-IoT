@@ -1,7 +1,7 @@
 ### Connect ESP32-S3 to Azure IoT
 
 <div style="text-justify: inter-word; inter-character;">
-This work describes a step-by-step procedure for connecting the <a href="https://www.amazon.com/FREENOVE-ESP32-S3-WROOM-Compatible-Wireless-Detailed/dp/B0BMQ8F7FN/ref=sr_1_2_sspa?keywords=esp32-s3&qid=1702168220&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" alt="Amazon Product Page"> ESP32-S3 </a>to Azure IoT Central. The setup includes the DHT11 temperature/humidity sensor to demonstrate remote data monitoring. Additionally, the remote 'Run' button on IoT Central is enabled to toggle the built-in LED light on the ESP32-S3 microcontroller.
+This work describes a step-by-step procedure for connecting the <a href="https://www.amazon.com/FREENOVE-ESP32-S3-WROOM-Compatible-Wireless-Detailed/dp/B0BMQ8F7FN/ref=sr_1_2_sspa?keywords=esp32-s3&qid=1702168220&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" alt="Amazon Product Page"> ESP32-S3 </a>to Azure IoT Central. The setup includes the DHT11 temperature/humidity sensor to demonstrate remote data monitoring. Enabled the remote 'Run' button on IoT Central to toggle the built-in LED light on the ESP32-S3 microcontroller. Finally, added and tested a turbidity sensor to the ESP32-S3.
 </div>
 <br> 
 
@@ -11,7 +11,8 @@ Table of Contents:<br>
     B. [Create Device](#b-create-device)    
     C. [Prepare the Actual Device](#c-prepare-the-actual-device)    
     D. [Adjust Display](#d-adjust-display)  
-    E. [Enable Remote control](#e-enable-remote-control)    
+    E. [Enable Remote control](#e-enable-remote-control)  
+    F. [Add a Turbidity Meter](#f-addturbidity-meter)  
 
 ***
 
@@ -76,7 +77,7 @@ Table of Contents:<br>
 
 1. Connect DHT11to ESP32-S3 as shown in the picture below. The connections are as follows:
    
-   - Signal (Left): No. 4 (Yellow) 
+   - Signal (Left): Pin No. 4 (Yellow) 
    
    - Vcc (middle): 3.3V (Red)
    
@@ -282,41 +283,79 @@ Table of Contents:<br>
 
 1. As a demonstration, we can enable the "Run" button of the Iot Central interface to toggle the builtin led on and off (LED 2). Modify the Arduino  script as follows:
    
-   - Within the Azure_IoT_Central_ESP32 tab, add the line: #define LED_BUILTIN 2 (Figure D3).
+  - Within the Azure_IoT_Central_ESP32 tab, add the line: #define LED_BUILTIN 2 (Figure E1).
      
-     <img src="pics/FigD3.png">
+     <img src="pics/FigE1.png">
      
-     <b> Figure D3. The Azure_IoT_Central_ESP32 tab first modification. </b>
+     <b> Figure E1. The Azure_IoT_Central_ESP32 tab first modification. </b>
      
-     - Add another line within the void loop() functioon (Figure D4).
+  - Add another line within the void loop() functioon (Figure E2).
      
-     <img src="pics/FigD4.png">
+     <img src="pics/FigE2.png">
      
      <b> Figure D4. The Azure_IoT_Central_ESP32 tab second modification. </b>
      
-     - Within the Azure_IoT_PnP_Template.cpp tab, add the line: digitalWrite(LED_BUILTIN, led1_on);. 
+  - Within the Azure_IoT_PnP_Template.cpp tab, add the line: digitalWrite(LED_BUILTIN, led1_on);. 
      
-     <img src="pics/FigD5.png">
+     <img src="pics/FigE3.png">
      
-     <b> Figure D5. The Azure_IoT_PnP_Template.cpp tab third modification. </b>
+     <b> Figure E3. The Azure_IoT_PnP_Template.cpp tab third modification. </b>
      
-     - After making the modifications to the script, re-upload the script into the ESP32 microcontroller.
+  - After making the modifications to the script, re-upload the script into the ESP32 microcontroller.
 
 2. Test the button.
    
    - To test the button, on the esp32-dht11 Devices page, click on the Commands tab.
    
-   - Toggle the "Run" button to turn the builtin LED light on and off (Figure D6). 
+   - Toggle the "Run" button to turn the builtin LED light on and off (Figure E4). 
      
-     <img src="pics/FigD6.png">
+     <img src="pics/FigE4.png">
      
-     <b> Figure D6. The Azure_IoT_PnP_Template.cpp tab third modification. </b> 
+     <b> Figure E4. The Azure_IoT_PnP_Template.cpp tab third modification. </b> 
    
-   - Figure D7a and D7b show the builtin LED button in the on and off states, respectively.
+   - Figure E5a and E5b show the builtin LED button in the on and off states, respectively.
      
-     <img src="pics/FigD7.png">
+     <img src="pics/FigE5.png">
      
-     <b> Figure D7. The builtin LED light in the (Left) "ON" and (Right) "OFF" states. </b> 
+     <b> Figure E5. The builtin LED light in the (Left) "ON" and (Right) "OFF" states. </b> 
+
+#### F. <a name="f-add-a-turbidity-meter">Add a Turbidity Meter</a>
+
+1. Installing the <a href="https://www.amazon.com/Turbidity-Quality-Monitoring-Detection-TSW-20M/dp/B07MVRQXFW/ref=asc_df_B07MVRQXFW/?tag=hyprod-20&linkCode=df0&hvadid=507909480377&hvpos=&hvnetw=g&hvrand=6932766439968375556&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9021681&hvtargid=pla-1346641968627&psc=1&mcid=27f231f67750332ebcb2015b543cb9c4&gclid=EAIaIQobChMI4-TSr56GgwMVJjStBh1noAo8EAQYAyABEgLjxPD_BwE"> turbidity sensor </a> to ESP32-S3.
+
+  -Figure F1 below shows how the turbidity meter is attached to the ESP32-S3 microcontroller, which are as follows.
+    - G (Ground): GND (Black)
+
+    - V (Voltge): 5 V (Red)
+    
+    - S (Signal): Pin No. 1 (Yellow)
+
+   <img src="pics/FigF1.jpg">
+
+   <b>Figure F1. Turbidity meter.</b>
+
+2. The Arduino script is as follows (adapted from Freenove's example codes, Sketch_08.1_ADC):
+
+    ```
+    #define PIN_ANALOG_IN  1
+    void setup() {
+      Serial.begin(115200);
+    }
+
+    void loop() {
+      int adcVal = analogRead(PIN_ANALOG_IN);
+      double voltage = adcVal * (5.0 / 1024.0);
+      Serial.printf("Sensor Output (V): %d, \t Voltage: %.2fV\r\n", adcVal, voltage);
+      delay(200);
+    }
+    ```
+3. Operation demonstration.
+  - Once uploaded into the microcontroller, on Arduino IDE, go to Tools > Serial plotter to view the plot of signal versus time (Figure F2). As a test, I blocked the turbidity meter first with a piece of A4 white paper that caused the signal to dip close to zero. Second, I blocked the signal with a plastic ruler that caused the signal to dip only slightly.
+
+  <img src="pics/FigF2.jpg">
+
+  <b> Figure F2. Serial plotter. </b>
+
 
 #### <a name="reference">Reference</a>
 
