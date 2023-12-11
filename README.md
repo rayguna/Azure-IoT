@@ -357,7 +357,7 @@ Table of Contents:<br>
 
 #### <a name="reference">Reference</a>
 
-1. Freenove, "Freenove", url: https://freenove.com/tutorial (Accessed on: Dec 12, 2023)
+1. Freenove, "Freenove", url: https://freenove.com/tutorial (Accessed on: Dec 10, 2023)
 2. Microsoft IoT Developers, "Demo: Arduino library for Azure IoT deep dive", url: https://www.youtube.com/watch?v=MLsnNXhzc2k (Feb 1, 2022)
 3. RLeclair. "Getting started with the ESPRESSIF ESP32 and Azure IoT Central with Azure SDK for C Arduino library", url: https://github.com/Azure/azure-sdk-for-c-arduino/tree/main/examples/Azure_IoT_Central_ESP32 (July 2023)
 4. momuno, "
