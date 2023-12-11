@@ -293,7 +293,7 @@ Table of Contents:<br>
      
      <img src="pics/FigE2.png">
      
-     <b> Figure D4. The Azure_IoT_Central_ESP32 tab second modification. </b>
+     <b> Figure E2. The Azure_IoT_Central_ESP32 tab second modification. </b>
      
   - Within the Azure_IoT_PnP_Template.cpp tab, add the line: digitalWrite(LED_BUILTIN, led1_on);. 
      
