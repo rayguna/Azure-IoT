@@ -55,7 +55,7 @@ Table of Contents:<br>
    
    - The newly created device name will be listed on "All devices" page (Figure A1).
      
-     <img src="FigB1.png">
+     <img src="pics/FigB1.png">
      
      <b>Figure B1. All devices table.</b>"
    
@@ -63,13 +63,13 @@ Table of Contents:<br>
    
    - Click on "Connect" to display the ID Scope, Device ID, and Primary Key.
      
-     <img src ="FigB2.png">
+     <img src ="pics/FigB2.png">
      
      <b>Figure B2. esp32-dht11 page.</b>
      
      - Since the device has not been connected, when you click on esp32-dht11, you will see a blank table as in Figure B3 below.
      
-     <img src="FigB3.png">
+     <img src="pics/FigB3.png">
      
      <b>Figure B3. Unpopulated esp32-dht11 table.</b>
 
