@@ -283,7 +283,7 @@ Table of Contents:<br>
 
 1. As a demonstration, we can enable the "Run" button of the Iot Central interface to toggle the builtin led on and off (LED 2). Modify the Arduino  script as follows:
    
-  - Within the Azure_IoT_Central_ESP32 tab, add the line: #define LED_BUILTIN 2 (Figure E1).
+  - Within the iot_configure.h tab, add the line: #define LED_BUILTIN 2 (Figure E1).
      
      <img src="pics/FigE1.png">
      
