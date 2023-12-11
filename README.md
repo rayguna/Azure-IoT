@@ -323,11 +323,9 @@ Table of Contents:<br>
 
 1. Installing the <a href="https://www.amazon.com/Turbidity-Quality-Monitoring-Detection-TSW-20M/dp/B07MVRQXFW/ref=asc_df_B07MVRQXFW/?tag=hyprod-20&linkCode=df0&hvadid=507909480377&hvpos=&hvnetw=g&hvrand=6932766439968375556&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9021681&hvtargid=pla-1346641968627&psc=1&mcid=27f231f67750332ebcb2015b543cb9c4&gclid=EAIaIQobChMI4-TSr56GgwMVJjStBh1noAo8EAQYAyABEgLjxPD_BwE"> turbidity sensor </a> to ESP32-S3.
 
-  -Figure F1 below shows how the turbidity meter is attached to the ESP32-S3 microcontroller, which are as follows.
+  - Figure F1 below shows how the turbidity meter is attached to the ESP32-S3 microcontroller, which are as follows.
     - G (Ground): GND (Black)
-
     - V (Voltge): 5 V (Red)
-    
     - S (Signal): Pin No. 1 (Yellow)
 
    <img src="pics/FigF1.jpg">
