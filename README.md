@@ -12,7 +12,7 @@ Table of Contents:<br>
     C. [Prepare the Actual Device](#c-prepare-the-actual-device)    
     D. [Adjust Display](#d-adjust-display)  
     E. [Enable Remote control](#e-enable-remote-control)  
-    F. [Add a Turbidity Meter](#f-addturbidity-meter)  
+    F. [Add a Turbidity Meter](#f-add-a-turbidity-meter)  
 
 ***
 
