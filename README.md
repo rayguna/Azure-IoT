@@ -14,7 +14,7 @@ This work details a step-by-step procedure for connecting the  <a href="https://
     D. [Adjust Display](#d-adjust-display)  
     E. [Enable Remote control](#e-enable-remote-control)  
     F. [Add a Turbidity Sensor](#f-add-a-turbidity-meter)  
-    G. [Connecting Turbidity Sensor to Azure IoT Central](#g-connecting turbidity-sensor-to-azure-iot-central)
+    G. [Connecting Turbidity Sensor to Azure IoT Central](#g-connecting-turbidity-sensor-to-azure-iot-central)
 
 ***
 
