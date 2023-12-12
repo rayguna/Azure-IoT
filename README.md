@@ -12,7 +12,8 @@ Table of Contents:<br>
     C. [Prepare the Actual Device](#c-prepare-the-actual-device)    
     D. [Adjust Display](#d-adjust-display)  
     E. [Enable Remote control](#e-enable-remote-control)  
-    F. [Add a Turbidity Meter](#f-add-a-turbidity-meter)  
+    F. [Add a Turbidity Sensor](#f-add-a-turbidity-meter)  
+    G. [Connecting Turbidity Sensor to Azure IoT Central](#g-connecting turbidity-sensor-to-azure-iot-central)
 
 ***
 
@@ -353,6 +354,72 @@ Table of Contents:<br>
   <img src="pics/FigF2.jpg">
 
   <b> Figure F2. Serial plotter. </b>
+
+#### <a name="g-connecting turbidity-sensor-to-azure-iot-central">G. Connecting Turbidity Sensor to Azure IoT Central</a>
+
+1. Modify the Arduino script as follows:
+
+  - Modify the iot_configs.h file as follows.
+
+  <img src="pics/FigG1.png">
+
+  <b> Figure G1. Modification to the iot_configs.h file. </b>
+
+  - Modify the Azure_IoT_PnP_Template.cpp file as follows.
+
+  <img src="pics/FigG2a.png">
+
+  <b> Figure G2a. First modification to the Azure_IoT_PnP_template.cpp file. </b>
+
+  <img src="pics/FigG2b.png">
+
+  <b> Figure G2b. First modification to the Azure_IoT_PnP_template.cpp file. </b>
+  
+  <img src="pics/FigG2c.png">
+
+  <b> Figure G2c. First modification to the Azure_IoT_PnP_template.cpp file. </b>
+
+2. Go to the device page through Azure IoT central website(<a href="https://esp32-dht11.azureiotcentral.com/devices"> https://esp32-dht11.azureiotcentral.com/devices </a>), and click on the device name (esp32dh111).     
+
+3. Update capabilities.
+
+  - Click on Device templates on the side bar.
+  - Click on your most recently modified template "Espressif ESP32 Azure IoT Kit v2". 
+  - Click on "Version". Update the Name of the new template field, to "Espressif ESP32 Azure IoT Kit v3" and click create.
+  - Click again on Device templates on the side bar. 
+  - Click on the newly created "Espressif ESP32 Azure IoT Kit v3" link.  
+  - Click on +Add capability and update the fields as show below.
+
+  <img src="pics/FigG3.png">
+
+  <b> Figure G3. The Espressif ESP32 Azure IoT Kit v3 Kit page. </b>
+  
+4. Update Display.
+
+  - To update the display, click on "Views" to get you to the page shown below, and then click on "Generate default views".  
+
+    <img src="pics/FigG4.png">
+
+    <b> Figure G4. The Espressif ESP32 Azure IoT Kit v3 Views page. </b>
+
+  - Finally, click on "Generate default dashboard view(s) as shown below. You will find that there are now two sets of the About and Overview links the left side bar. To delete the old About and Overview links, click on the respective links and click on delete. The ones at the lower portion of the side bar are the recent ones. 
+
+    <img src="pics/FigG5.png">
+
+    <b> Figure G5. The Espressif ESP32 Azure IoT Kit v3 Generate default dashboard view(s) page. </b>
+
+  - Click on "Overview" to view the newly updated display page. On each of the three sub-windows (Temperature, Humidity, and turbidity_voltage) on the Overview page, click on Change Visualization and select Last Known Value. You can also change the sub-window title by clicking on Edit. Change turbidity_voltage to Turbidity Voltage on the main window and sub-window titles and click Update. Click on Save to retain the changes. Click on <- to return. Click on Publish to apply the change. 
+
+    <img src="pics/FigG6.png">
+
+    <b> Figure G6. The Espressif ESP32 Azure IoT Kit v3 Overview page. </b>
+  - Click on Devices on the side bar. Click on esp32-dht11 under device name. Click on Manage template > Assign template. Select "Espressif ESP32 Azure IoT Kit v3" and click Assign template.
+
+  - If you are not already in the Overview tab, click on it to view the current graph and sensor values (Figure G7).
+
+  <img src="pics/FigG7.png">
+
+  <b> Figure G7. esp32-dht11 Devices Overview page. </b>
 
 
 #### <a name="reference">Reference</a>
