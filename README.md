@@ -356,7 +356,7 @@ This work details a step-by-step procedure for connecting the  <a href="https://
 
   <b> Figure F2. Serial plotter. </b>
 
-#### <a name="g-connecting turbidity-sensor-to-azure-iot-central">G. Connecting Turbidity Sensor to Azure IoT Central</a>
+#### G. <a name="g-connecting turbidity-sensor-to-azure-iot-central"> Connecting Turbidity Sensor to Azure IoT Central</a>
 
 1. Modify the Arduino script as follows:
 
