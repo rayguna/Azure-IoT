@@ -362,21 +362,21 @@ This work details a step-by-step procedure for connecting the  <a href="https://
 
   - Modify the iot_configs.h file as follows.
 
-  <img src="pics/FigG1.png">
+    <img src="pics/FigG1.png">
 
-  <b> Figure G1. Modification to the iot_configs.h file. </b>
+    <b> Figure G1. Modification to the iot_configs.h file. </b>
 
   - Modify the Azure_IoT_PnP_Template.cpp file as follows.
 
-  <img src="pics/FigG2a.png">
+    <img src="pics/FigG2a.png">
 
-  <b> Figure G2a. First modification to the Azure_IoT_PnP_template.cpp file. </b>
+    <b> Figure G2a. First modification to the Azure_IoT_PnP_template.cpp file. </b>
 
-  <img src="pics/FigG2b.png">
+    <img src="pics/FigG2b.png">
 
-  <b> Figure G2b. First modification to the Azure_IoT_PnP_template.cpp file. </b>
-  
-  <img src="pics/FigG2c.png">
+    <b> Figure G2b. First modification to the Azure_IoT_PnP_template.cpp file. </b>
+    
+    <img src="pics/FigG2c.png">
 
   <b> Figure G2c. First modification to the Azure_IoT_PnP_template.cpp file. </b>
 
@@ -391,17 +391,17 @@ This work details a step-by-step procedure for connecting the  <a href="https://
   - Click on the newly created "Espressif ESP32 Azure IoT Kit v3" link.  
   - Click on +Add capability and update the fields as show below.
 
-  <img src="pics/FigG3.png">
+    <img src="pics/FigG3.png">
 
-  <b> Figure G3. The Espressif ESP32 Azure IoT Kit v3 Kit page. </b>
+    <b> Figure G3. The Espressif ESP32 Azure IoT Kit v3 Kit page. </b>
   
 4. Update Display.
 
   - To update the display, click on "Views" to get you to the page shown below, and then click on "Generate default views".  
 
-    <img src="pics/FigG4.png">
+      <img src="pics/FigG4.png">
 
-    <b> Figure G4. The Espressif ESP32 Azure IoT Kit v3 Views page. </b>
+      <b> Figure G4. The Espressif ESP32 Azure IoT Kit v3 Views page. </b>
 
   - Finally, click on "Generate default dashboard view(s) as shown below. You will find that there are now two sets of the About and Overview links the left side bar. To delete the old About and Overview links, click on the respective links and click on delete. The ones at the lower portion of the side bar are the recent ones. 
 
@@ -418,9 +418,9 @@ This work details a step-by-step procedure for connecting the  <a href="https://
 
   - If you are not already in the Overview tab, click on it to view the current graph and sensor values (Figure G7).
 
-  <img src="pics/FigG7.png">
+    <img src="pics/FigG7.png">
 
-  <b> Figure G7. esp32-dht11 Devices Overview page. </b>
+    <b> Figure G7. esp32-dht11 Devices Overview page. </b>
 
 
 #### <a name="reference">Reference</a>
