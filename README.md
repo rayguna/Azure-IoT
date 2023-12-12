@@ -16,6 +16,8 @@ This work details a step-by-step procedure for connecting the  <a href="https://
     F. [Add a Turbidity Sensor](#f-add-a-turbidity-meter)  
     G. [Connecting Turbidity Sensor to Azure IoT Central](#g-connecting-turbidity-sensor-to-azure-iot-central) 
 
+Click <a href="https://github.com/rayguna/Azure-IoT/tree/main/Arduino_Scripts">here</a> for the Arduino scripts.
+
 ***
 
 #### <a name="a-create-an-app-on-iot-central">A. Create an app. on Iot Central</a>
