@@ -1,12 +1,13 @@
 ### Connect ESP32-S3 to Azure IoT
 
-<div style="text-justify: inter-word; inter-character;">
-This work describes a step-by-step procedure for connecting the <a href="https://www.amazon.com/FREENOVE-ESP32-S3-WROOM-Compatible-Wireless-Detailed/dp/B0BMQ8F7FN/ref=sr_1_2_sspa?keywords=esp32-s3&qid=1702168220&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" alt="Amazon Product Page"> ESP32-S3 </a>to Azure IoT Central. The setup includes the DHT11 temperature/humidity sensor to demonstrate remote data monitoring. Enabled the remote 'Run' button on IoT Central to toggle the built-in LED light on the ESP32-S3 microcontroller. Finally, added and tested a turbidity sensor to the ESP32-S3.
+<b>About</b>
+<div style="text-align: justify;">
+This work details a step-by-step procedure for connecting the  <a href="https://www.amazon.com/FREENOVE-ESP32-S3-WROOM-Compatible-Wireless-Detailed/dp/B0BMQ8F7FN/ref=sr_1_2_sspa?keywords=esp32-s3&qid=1702168220&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" alt="Amazon Product Page"> ESP32-S3 </a> to Azure IoT Central. The setup involves integrating the DHT11 temperature/humidity sensor to demonstrate remote data monitoring. Additionally, the remote 'Run' button on IoT Central is configured to control the built-in LED light on the ESP32-S3 microcontroller. To expand functionalities, a turbidity sensor was incorporated into the ESP32-S3.
 </div>
 <br> 
 
 
-Table of Contents:<br>
+<b>Table of Contents:</b><br>
     A. [Create an app on Iot Central](#a-create-an-app-on-iot-central)  
     B. [Create Device](#b-create-device)    
     C. [Prepare the Actual Device](#c-prepare-the-actual-device)    
