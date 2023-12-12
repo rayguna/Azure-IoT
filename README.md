@@ -285,41 +285,41 @@ This work details a step-by-step procedure for connecting the  <a href="https://
 
 1. As a demonstration, we can enable the "Run" button of the Iot Central interface to toggle the builtin led on and off (LED 2). Modify the Arduino  script as follows:
    
-  - Within the iot_configure.h tab, add the line: #define LED_BUILTIN 2 (Figure E1).
-     
-     <img src="pics/FigE1.png">
-     
-     <b> Figure E1. The Azure_IoT_Central_ESP32 tab first modification. </b>
-     
-  - Add another line within the void loop() functioon (Figure E2).
-     
-     <img src="pics/FigE2.png">
-     
-     <b> Figure E2. The Azure_IoT_Central_ESP32 tab second modification. </b>
-     
-  - Within the Azure_IoT_PnP_Template.cpp tab, add the line: digitalWrite(LED_BUILTIN, led1_on);. 
-     
-     <img src="pics/FigE3.png">
-     
-     <b> Figure E3. The Azure_IoT_PnP_Template.cpp tab third modification. </b>
-     
-  - After making the modifications to the script, re-upload the script into the ESP32 microcontroller.
+    - Within the iot_configure.h tab, add the line: #define LED_BUILTIN 2 (Figure E1).
+      
+      <img src="pics/FigE1.png">
+      
+      <b> Figure E1. The Azure_IoT_Central_ESP32 tab first modification. </b>
+      
+    - Add another line within the void loop() functioon (Figure E2).
+      
+      <img src="pics/FigE2.png">
+      
+      <b> Figure E2. The Azure_IoT_Central_ESP32 tab second modification. </b>
+      
+    - Within the Azure_IoT_PnP_Template.cpp tab, add the line: digitalWrite(LED_BUILTIN, led1_on);. 
+      
+      <img src="pics/FigE3.png">
+      
+      <b> Figure E3. The Azure_IoT_PnP_Template.cpp tab third modification. </b>
+      
+    - After making the modifications to the script, re-upload the script into the ESP32 microcontroller.
 
 2. Test the button.
    
-   - To test the button, on the esp32-dht11 Devices page, click on the Commands tab.
-   
-   - Toggle the "Run" button to turn the builtin LED light on and off (Figure E4). 
-     
-     <img src="pics/FigE4.png">
-     
-     <b> Figure E4. The Azure_IoT_PnP_Template.cpp tab third modification. </b> 
-   
-   - Figure E5a and E5b show the builtin LED button in the on and off states, respectively.
-     
-     <img src="pics/FigE5.png">
-     
-     <b> Figure E5. The builtin LED light in the (Left) "ON" and (Right) "OFF" states. </b> 
+    - To test the button, on the esp32-dht11 Devices page, click on the Commands tab.
+    
+    - Toggle the "Run" button to turn the builtin LED light on and off (Figure E4). 
+      
+      <img src="pics/FigE4.png">
+      
+      <b> Figure E4. The Azure_IoT_PnP_Template.cpp tab third modification. </b> 
+    
+    - Figure E5a and E5b show the builtin LED button in the on and off states, respectively.
+      
+      <img src="pics/FigE5.png">
+      
+      <b> Figure E5. The builtin LED light in the (Left) "ON" and (Right) "OFF" states. </b> 
 
 #### F. <a name="f-add-a-turbidity-meter">Add a Turbidity Meter</a>
 
@@ -330,9 +330,9 @@ This work details a step-by-step procedure for connecting the  <a href="https://
     - V (Voltage): 5 V (Red)
     - S (Signal): Pin No. 1 (Yellow)
 
-   <img src="pics/FigF1.jpg">
+    <img src="pics/FigF1.jpg">
 
-   <b>Figure F1. Turbidity meter.</b>
+    <b>Figure F1. Turbidity meter.</b>
 
 2. The Arduino script is as follows (adapted from Freenove's example codes, Sketch_08.1_ADC):
 
@@ -352,9 +352,9 @@ This work details a step-by-step procedure for connecting the  <a href="https://
 3. Operation demonstration.
   - Once uploaded into the microcontroller, on Arduino IDE, go to Tools > Serial plotter to view the plot of signal versus time (Figure F2). As a test, I blocked the turbidity meter first with a piece of A4 white paper that caused the signal to dip close to zero. Second, I blocked the signal with a plastic ruler that caused the signal to dip only slightly.
 
-  <img src="pics/FigF2.jpg">
+    <img src="pics/FigF2.jpg">
 
-  <b> Figure F2. Serial plotter. </b>
+    <b> Figure F2. Serial plotter. </b>
 
 #### G. <a name="g-connecting-turbidity-sensor-to-azure-iot-central"> Connecting Turbidity Sensor to Azure IoT Central</a>
 
@@ -414,7 +414,7 @@ This work details a step-by-step procedure for connecting the  <a href="https://
       <img src="pics/FigG6.png">
 
       <b> Figure G6. The Espressif ESP32 Azure IoT Kit v3 Overview page. </b>
-      
+
     - Click on Devices on the side bar. Click on esp32-dht11 under device name. Click on Manage template > Assign template. Select "Espressif ESP32 Azure IoT Kit v3" and click Assign template.
 
     - If you are not already in the Overview tab, click on it to view the current graph and sensor values (Figure G7).
