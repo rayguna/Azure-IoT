@@ -336,7 +336,7 @@ Click <a href="https://github.com/rayguna/Azure-IoT/tree/main/Arduino_Scripts">h
 
     <b>Figure F1. Turbidity meter.</b>
 
-2. The Arduino script is as follows (adapted from Freenove's example codes, Sketch_08.1_ADC):
+2. The Arduino test script is as follows (adapted from Freenove's example codes, Sketch_08.1_ADC). This section is optional and is not needed to connect the turbidity sensor to the Iot Central.
 
     ```
     #define PIN_ANALOG_IN  1
