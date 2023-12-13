@@ -147,6 +147,7 @@ Click <a href="https://github.com/rayguna/Azure-IoT/tree/main/Arduino_Scripts">h
    - To view the humidity and temperature output from DHT11 sensor, go to Tools > Serial Monitor. The following window will pop out. Make sure to match the baud rate with the number you specify in the code. In this case, the baud rate is 115200.
      
      <img src="pics/FigC3.png" size=(3,3)>
+     
      <b> Figure C3. Humidity and temperature. </b>
 
 4. Check wi-fi connection (Optional)
@@ -173,6 +174,7 @@ Click <a href="https://github.com/rayguna/Azure-IoT/tree/main/Arduino_Scripts">h
      ```
      
      <img src="pics/FigC4.png" size=(3,3)>
+     
      <b>Figure C4. Serial monitor.</b>
 
 5. Connect Device to IoT Central via a Simulation Code
@@ -181,6 +183,7 @@ Click <a href="https://github.com/rayguna/Azure-IoT/tree/main/Arduino_Scripts">h
    - Enable a mobile hotspot and set the Network band to 2.4 GHz (not 5 GHz). Note the Network name (SSID) and password amd turn the mobile hotspot on. 
      
      <img src="pics/FigC5.png">
+     
      <b>Figure C5. Mobile hotspot configuration.</b>
    
    5.2. Upload script into ESP32-S3 microcontroller
@@ -194,9 +197,11 @@ Click <a href="https://github.com/rayguna/Azure-IoT/tree/main/Arduino_Scripts">h
    - Below shows the contents of the *iot_configs.h* file that requires modification. See section B to retrieve the relevant parameters.
      
      <img src="pics/FigC6a.png">
+     
      <b> Figure C6a. The 2.4 GHz wifi that requires modification for SSID (network name) and password. </b>
      
      <img src="pics/FigC6b.png">
+     
      <b> Figure C6b. The IoT Central parameters that require modifications for ID_SCOPE, DEVICE_ID, and DEVICE_KEY. </b>
    
    - Click on Sketch > Upload to load the script into the ESP32 microcontroller.
