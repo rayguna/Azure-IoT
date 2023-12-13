@@ -2,7 +2,7 @@
 
 <b>About</b>
 <div style="text-align: justify;">
-This work details a step-by-step procedure for connecting the  <a href="https://www.amazon.com/FREENOVE-ESP32-S3-WROOM-Compatible-Wireless-Detailed/dp/B0BMQ8F7FN/ref=sr_1_2_sspa?keywords=esp32-s3&qid=1702168220&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" alt="Amazon Product Page"> ESP32-S3 </a> to Azure IoT Central. The setup involves integrating the DHT11 temperature/humidity sensor to demonstrate remote data monitoring. Additionally, the remote 'Run' button on IoT Central is configured to control the built-in LED light on the ESP32-S3 microcontroller. To expand functionalities, a turbidity sensor was incorporated into the ESP32-S3.
+This work details a step-by-step procedure for connecting the  <a href="https://www.amazon.com/FREENOVE-ESP32-S3-WROOM-Compatible-Wireless-Detailed/dp/B0BMQ8F7FN/ref=sr_1_2_sspa?keywords=esp32-s3&qid=1702168220&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank" alt="Amazon Product Page"> ESP32-S3 </a> to Azure IoT Central. The setup involves integrating the DHT11 temperature/humidity sensor to demonstrate remote data monitoring. Additionally, the remote 'Run' button on IoT Central is configured to control the built-in LED light on the ESP32-S3 microcontroller. To expand functionalities, a turbidity sensor was incorporated into the ESP32-S3.
 </div>
 <br> 
 
@@ -16,14 +16,14 @@ This work details a step-by-step procedure for connecting the  <a href="https://
     F. [Add a Turbidity Sensor](#f-add-a-turbidity-meter)  
     G. [Connecting Turbidity Sensor to Azure IoT Central](#g-connecting-turbidity-sensor-to-azure-iot-central) 
 
-Click <a href="https://github.com/rayguna/Azure-IoT/tree/main/Arduino_Scripts">here</a> for the Arduino scripts.
+Click <a href="https://github.com/rayguna/Azure-IoT/tree/main/Arduino_Scripts" target="_blank">here</a> for the Arduino scripts.
 
 ***
 
 #### <a name="a-create-an-app-on-iot-central">A. Create an app. on Iot Central</a>
 
-1. Create an account (only do this once) on <a href="https://azure.microsoft.com/">https://azure.microsoft.com/</a>.
-2. Go to <a href="https://portal.azure.com">https://portal.azure.com</a>. Click on IoT Central Applications. Click on Create iot central application.
+1. Create an account (only do this once) on <a href="https://azure.microsoft.com/" target="_blank">https://azure.microsoft.com/</a>.
+2. Go to <a href="https://portal.azure.com" target="_blank">https://portal.azure.com</a>. Click on IoT Central Applications. Click on Create iot central application.
 3. Fill out the form as follows:
    - Subscription: Free Trial.
    - Resource group: MyResourceGroup.
@@ -39,7 +39,7 @@ Click <a href="https://github.com/rayguna/Azure-IoT/tree/main/Arduino_Scripts">h
    - Click on: "Go to resource" to enter into the newly created app page called uniqueiot123.
 4. On uniqueiot123 page, click on the IoT Central Application URL: https://esp32-dht11.azureiotcentral.com. 
 
-**Note:** If you change your mind and need to delete your application, from <a href="apps.azureiotcentral.com/myapps"> apps.azureiotcentral.com/myapps </a>, click on the specific application and scroll to the bottom of the side-bar > Within Settings click on Application to get into the Management page > Scroll down and click on Delete.
+**Note:** If you change your mind and need to delete your application, from <a href="apps.azureiotcentral.com/myapps" target="_blank"> apps.azureiotcentral.com/myapps </a>, click on the specific application and scroll to the bottom of the side-bar > Within Settings click on Application to get into the Management page > Scroll down and click on Delete.
 
 #### <a name="b-create-device">B. Create Device</a>
 
@@ -97,7 +97,7 @@ Click <a href="https://github.com/rayguna/Azure-IoT/tree/main/Arduino_Scripts">h
 
 2. Set up Arduino IDE
    
-   - To communicate ESP32-S3 to an Arduino IDE, follow the instructions described in the manufacturer's manual (Freenove_Basic_Starter_Kit_for_ESP32_S3-main\C\C_Tutorial.pdf), which can be downloaded from <a href="https://freenove.com/tutorial">FNK0084 - Freenove Basic Starter Kit for ESP32-S3</a>
+   - To communicate ESP32-S3 to an Arduino IDE, follow the instructions described in the manufacturer's manual (Freenove_Basic_Starter_Kit_for_ESP32_S3-main\C\C_Tutorial.pdf), which can be downloaded from <a href="https://freenove.com/tutorial" target="_blank">FNK0084 - Freenove Basic Starter Kit for ESP32-S3</a>
    
    - After configuring Arduino IDE environment according to the instructions described in the manual, set the board to ESP32S3 Dev Module. Access this option by going to Tools > Board: "ESP232S3 Dev Module" > ESP32S3 Dev Module. Also, select the appropriate communication port by going to Tools > Port: COMx. x is the port number (e.g., COM3). You only need do set the board and communication port once.  
 
@@ -330,7 +330,7 @@ Click <a href="https://github.com/rayguna/Azure-IoT/tree/main/Arduino_Scripts">h
 
 #### F. <a name="f-add-a-turbidity-meter">Add a Turbidity Meter</a>
 
-1. Installing the <a href="https://www.amazon.com/Turbidity-Quality-Monitoring-Detection-TSW-20M/dp/B07MVRQXFW/ref=asc_df_B07MVRQXFW/?tag=hyprod-20&linkCode=df0&hvadid=507909480377&hvpos=&hvnetw=g&hvrand=6932766439968375556&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9021681&hvtargid=pla-1346641968627&psc=1&mcid=27f231f67750332ebcb2015b543cb9c4&gclid=EAIaIQobChMI4-TSr56GgwMVJjStBh1noAo8EAQYAyABEgLjxPD_BwE"> turbidity sensor </a> to ESP32-S3.
+1. Installing the <a href="https://www.amazon.com/Turbidity-Quality-Monitoring-Detection-TSW-20M/dp/B07MVRQXFW/ref=asc_df_B07MVRQXFW/?tag=hyprod-20&linkCode=df0&hvadid=507909480377&hvpos=&hvnetw=g&hvrand=6932766439968375556&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9021681&hvtargid=pla-1346641968627&psc=1&mcid=27f231f67750332ebcb2015b543cb9c4&gclid=EAIaIQobChMI4-TSr56GgwMVJjStBh1noAo8EAQYAyABEgLjxPD_BwE" target="_blank"> turbidity sensor </a> to ESP32-S3.
 
     - Figure F1 below shows how the turbidity meter is attached to the ESP32-S3 microcontroller, which are as follows.
     - G (Ground): GND (Black)
@@ -387,7 +387,7 @@ Click <a href="https://github.com/rayguna/Azure-IoT/tree/main/Arduino_Scripts">h
 
     <b> Figure G2c. First modification to the Azure_IoT_PnP_template.cpp file. </b>
 
-2. Go to the device page through Azure IoT central website(<a href="https://esp32-dht11.azureiotcentral.com/devices"> https://esp32-dht11.azureiotcentral.com/devices </a>), and click on the device name (esp32dh111).     
+2. Go to the device page through Azure IoT central website(<a href="https://esp32-dht11.azureiotcentral.com/devices" target="_blank"> https://esp32-dht11.azureiotcentral.com/devices </a>), and click on the device name (esp32dh111).     
 
 3. Update capabilities.
 
